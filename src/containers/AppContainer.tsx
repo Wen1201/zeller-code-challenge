@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 import FilterSection from '../components/FilterSection/FilterSection';
+import ListingSection from '../components/ListingSection';
 
 const Container = styled.div`
   padding: 10px;
@@ -14,6 +15,7 @@ const AppContainer = () => {
   return (
     <Container>
       <FilterSection userType={userType} onUserTypeChange={setUserType} />
+      <ListingSection userType={userType} />
     </Container>
   );
 };
