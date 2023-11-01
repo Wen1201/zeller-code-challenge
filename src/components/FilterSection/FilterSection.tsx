@@ -12,21 +12,21 @@ const FilterSection: React.FC<FilterSectionProps> = ({ userType, onUserTypeChang
         <input
           type="radio"
           name="userType"
-          value="Admin"
-          checked={userType === 'Admin'}
-          onChange={() => onUserTypeChange('Admin')}
+          value="ADMIN"
+          checked={userType === 'ADMIN'}
+          onChange={() => onUserTypeChange('ADMIN')}
         />
-        Admin
+        ADMIN
       </label>
       <label>
         <input
           type="radio"
           name="userType"
-          value="Manager"
-          checked={userType === 'Manager'}
-          onChange={() => onUserTypeChange('Manager')}
+          value="MANAGER"
+          checked={userType === 'MANAGER'}
+          onChange={() => onUserTypeChange('MANAGER')}
         />
-        Manager
+        MANAGER
       </label>
     </div>
   );

@@ -24,7 +24,7 @@ describe('useFilteredResult', () => {
   });
 
   it('should call graphqlOperation with correct query', async () => {
-    const { result } = renderHook(() => useFilteredResult('Admin'));
+    const { result } = renderHook(() => useFilteredResult('ADMIN'));
 
     await act(async () => {
       await result.current.fetchUsers();
@@ -34,7 +34,7 @@ describe('useFilteredResult', () => {
   });
 
   it('should fetch and filter users correctly', async () => {
-    const { result } = renderHook(() => useFilteredResult('Admin'));
+    const { result } = renderHook(() => useFilteredResult('ADMIN'));
 
     expect(result.current.filteredUsers).toBeNull();
 
@@ -49,7 +49,7 @@ describe('useFilteredResult', () => {
     const { result, rerender } = renderHook(
       ({ userType }) => useFilteredResult(userType),
       {
-        initialProps: { userType: 'Admin' },
+        initialProps: { userType: 'ADMIN' },
       },
     );
 
@@ -59,7 +59,7 @@ describe('useFilteredResult', () => {
 
     expect(result.current.filteredUsers).toEqual(mockFilteredUsers);
 
-    rerender({ userType: 'Manager' });
+    rerender({ userType: 'MANAGER' });
 
     expect(result.current.filteredUsers).not.toEqual(mockFilteredUsers);
   });
@@ -72,7 +72,7 @@ describe('useFilteredResult', () => {
 
     (API.graphql as jest.Mock) = jest.fn(() => Promise.reject(error));
 
-    const { result } = renderHook(() => useFilteredResult('Admin'));
+    const { result } = renderHook(() => useFilteredResult('ADMIN'));
 
     await act(async () => {
       await result.current.fetchUsers();

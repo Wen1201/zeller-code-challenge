@@ -5,31 +5,31 @@
         "email": "new_email1@gmail.com",
         "id": "new_id_1",
         "name": "New Name 1",
-        "role": "Admin"
+        "role": "ADMIN"
       },
       {
         "email": "new_email2@gmail.com",
         "id": "new_id_2",
         "name": "New Name 2",
-        "role": "Admin"
+        "role": "ADMIN"
       },
       {
         "email": "new_email3@gmail.com",
         "id": "new_id_3",
         "name": "New Name 3",
-        "role": "Admin"
+        "role": "ADMIN"
       },
       {
         "email": "new_email4@gmail.com",
         "id": "new_id_4",
         "name": "New Name 4",
-        "role": "Manager"
+        "role": "MANAGER"
       },
       {
         "email": "new_email5@gmail.com",
         "id": "new_id_5",
         "name": "New Name 5",
-        "role": "Manager"
+        "role": "MANAGER"
       }
     ]
   }

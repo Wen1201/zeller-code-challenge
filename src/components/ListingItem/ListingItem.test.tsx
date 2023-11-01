@@ -6,9 +6,9 @@ describe('<ListingItem />', () => {
     email: 'test@email.com',
     id: 'test-id',
     name: 'Test Name',
-    role: 'Admin' as const,
+    role: 'ADMIN' as const,
   };
-  const convertedRole = 'Admin';
+  const convertedRole = 'ADMIN';
 
   it('should render avatar with cap=cased first letter letter of user name', () => {
     render(<ListingItem user={user} />);

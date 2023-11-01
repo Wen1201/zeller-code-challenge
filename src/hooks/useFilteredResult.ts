@@ -6,7 +6,7 @@ export type UserType = {
   email: string;
   id: string;
   name: string;
-  role: 'Manager' | 'Admin';
+  role: 'MANAGER' | 'ADMIN';
 };
 
 type GraphQLResponseType = {

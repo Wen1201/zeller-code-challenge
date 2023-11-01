@@ -10,7 +10,7 @@ const Container = styled.div`
 `;
 
 const AppContainer = () => {
-  const [userType, setUserType] = useState<string>('Admin');
+  const [userType, setUserType] = useState<string>('ADMIN');
 
   return (
     <Container>
