@@ -15,6 +15,7 @@ const AppContainer = () => {
   return (
     <Container>
       <FilterSection userType={userType} onUserTypeChange={setUserType} />
+      <hr/>
       <ListingSection userType={userType} />
     </Container>
   );

@@ -7,10 +7,10 @@ test('FilterSection component renders correctly', () => {
 
   render(<FilterSection userType="ADMIN" onUserTypeChange={handleUserTypeChange} />);
 
-  const adminRadio = screen.getByLabelText('ADMIN');
+  const adminRadio = screen.getByLabelText('Admin');
   expect(adminRadio).toBeInTheDocument();
 
-  const managerRadio = screen.getByLabelText('MANAGER');
+  const managerRadio = screen.getByLabelText('Manager');
   expect(managerRadio).toBeInTheDocument();
 });
 
@@ -19,7 +19,7 @@ test('User type change is handled correctly', () => {
 
   render(<FilterSection userType="ADMIN" onUserTypeChange={handleUserTypeChange} />);
 
-  const managerRadio = screen.getByLabelText('MANAGER');
+  const managerRadio = screen.getByLabelText('Manager');
   fireEvent.click(managerRadio);
 
   expect(handleUserTypeChange).toHaveBeenCalledWith('MANAGER');

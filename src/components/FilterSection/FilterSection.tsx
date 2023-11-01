@@ -1,4 +1,5 @@
 import React from 'react';
+import Radio from '../Common/Radio';
 
 interface FilterSectionProps {
   userType: string;
@@ -8,26 +9,19 @@ interface FilterSectionProps {
 const FilterSection: React.FC<FilterSectionProps> = ({ userType, onUserTypeChange }) => {
   return (
     <div>
-      <label>
-        <input
-          type="radio"
-          name="userType"
+        <h1>User Types</h1>
+        <Radio
+          name="Admin"
           value="ADMIN"
           checked={userType === 'ADMIN'}
           onChange={() => onUserTypeChange('ADMIN')}
         />
-        ADMIN
-      </label>
-      <label>
-        <input
-          type="radio"
-          name="userType"
+        <Radio
+          name="Manager"
           value="MANAGER"
           checked={userType === 'MANAGER'}
           onChange={() => onUserTypeChange('MANAGER')}
         />
-        MANAGER
-      </label>
     </div>
   );
 };
