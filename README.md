@@ -38,3 +38,13 @@ Here are some key implementation details of this project:
 - **GraphQL Interaction**: React hooks are used for interacting with GraphQL services. You can find details on how to use these hooks in the codebase.
 - **Test-Driven Development (TDD)**: Unit tests are written for individual components and hook to ensure code quality and functionality.
 - **Environment Variables**: Sensitive credentials and secrets should be stored in an `.env` file to protect them. Make sure not to commit this file to your version control system.
+
+## Project Screenshots
+
+Here are some screenshots that provide a glimpse of the project:
+
+- **UI in the Browser:**
+  ![Browser UI](./assets/screenshots/browser-UI.png)
+
+- **Responsive Design on Mobile:**
+  ![Mobile UI](./assets/screenshots/mobile-UI.png)
