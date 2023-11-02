@@ -1,46 +1,21 @@
-# Getting Started with Create React App
+## Getting started
+### Prerequisites
+1. Node: any version starting with 18.12.1 or greater
+  - run `node --version` to check current node version
+  - If you need to upgrade or install [NodeJs](http://nodejs.org/) : suggest to install via [Node Version Manager NVM](https://github.com/creationix/nvm)
+2. A clone or download of this repo on your local machine
+### Installation
+1. `cd` to the project root
+2. `npm install`to install the npm dependencies
+### Running locally
+- `npm start` to start the local development
+- `npm run test` to run the unit test
+- `npm run test:coverage` to display the test coverage report
+## Implementation Details
+Here are some key implementation details of this project:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Styling: The application's styles are implemented using `react-styled-components`.
+- Component Organization: Components are logically split into separate sections.
+- GraphQL Interaction: React hooks are used for interacting with GraphQL.
+- Test-Driven Development (TDD): Unit tests are written for individual components and hooks.
+- Environment Variables: Sensitive credentials and secrets should be stored in an `.env` file to protect them.
